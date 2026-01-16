@@ -12,7 +12,7 @@
         var newUrl =
           window.location.origin +
           '/?redirect=' +
-          encodeURIComponent(pathname + search + hash + '/#');
+          encodeURIComponent(pathname + search + hash + '#');
 
         window.location.replace(newUrl);
       })();
