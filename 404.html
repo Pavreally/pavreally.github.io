@@ -9,10 +9,8 @@
         var search = window.location.search;
         var hash = window.location.hash;
 
-        // GitHub Pages -> index.html
         var newUrl =
           window.location.origin +
-          window.location.pathname.split('/')[1] +
           '/?redirect=' +
           encodeURIComponent(pathname + search + hash);
 
