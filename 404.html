@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      (function () {
+        var pathname = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+
+        // GitHub Pages -> index.html
+        var newUrl =
+          window.location.origin +
+          window.location.pathname.split('/')[1] +
+          '/?redirect=' +
+          encodeURIComponent(pathname + search + hash);
+
+        window.location.replace(newUrl);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
