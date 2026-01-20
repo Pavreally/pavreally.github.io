@@ -1,14 +1,23 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pavel Gornostaev | Game Developer</title>
-    <script type="module" crossorigin src="./assets/index-SPEd3GtE.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D2Ndu5_b.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Redirecting…</title>
+	<meta name="robots" content="noindex" />
+	<script>
+		(function () {
+			var pathname = location.pathname;
+			if (pathname && pathname !== '/') {
+				var newUrl = location.origin + '/#' + pathname + location.search + location.hash;
+				window.location.replace(newUrl);
+			} else {
+				window.location.replace(location.origin + '/#/');
+			}
+		})();
+	</script>
+</head>
+
+<body></body>
+
 </html>
