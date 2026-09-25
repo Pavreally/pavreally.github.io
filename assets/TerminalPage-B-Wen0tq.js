@@ -1,0 +1,1 @@
+import{j as a,T as i}from"./index-ZrvCNRnw.js";function s({fullscreen:e=!1}){return a.jsx("div",{className:e?"fixed inset-0 bg-black z-50":"",children:a.jsx(i,{fullscreen:e})})}export{s as TerminalPage};
