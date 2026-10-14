@@ -1,0 +1,1 @@
+function u(t){const a=t.width??20;let e=0;function n(){const r=Math.round(e/t.max*a),m=a-r;return`[${"#".repeat(r)}${".".repeat(m)}] ${e}/${t.max}`}return{reset(){e=0},set(r){return e=Math.max(0,Math.min(r,t.max)),n()},increment(r=1){return e=Math.min(e+r,t.max),n()},get(){return e}}}export{u as c};

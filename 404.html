@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Redirecting…</title>
+	<meta name="robots" content="noindex" />
+	<script>
+		(function () {
+			var pathname = location.pathname;
+			if (pathname && pathname !== '/') {
+				var newUrl = location.origin + '/#' + pathname + location.search + location.hash;
+				window.location.replace(newUrl);
+			} else {
+				window.location.replace(location.origin + '/#/');
+			}
+		})();
+	</script>
+</head>
+
+<body></body>
+
+</html>
